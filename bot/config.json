@@ -1,0 +1,8 @@
+{
+  "strategy": "4-hour breakout",
+  "startBalance": 10000,
+  "riskPercent": 1,
+  "spread": 0.40,
+  "newsPauseMinutes": 30,
+  "enterWithinMinutes": 120
+}

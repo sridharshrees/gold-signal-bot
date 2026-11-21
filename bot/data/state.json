@@ -1,0 +1,11 @@
+{
+ "start": 10000,
+ "balance": 10000,
+ "pos": null,
+ "history": [],
+ "lastSignalEnd": 0,
+ "log": [],
+ "lastRun": 1795224186523,
+ "lastError": null,
+ "source": "Binance"
+}

@@ -1,0 +1,40 @@
+name: Cloud bot
+
+on:
+  schedule:
+    - cron: '2,17,32,47 * * * *'   # every 15 minutes, a little off the top of the hour
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['bot/run.js', 'bot/engine.js', 'bot/config.json', '.github/workflows/bot.yml']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cloud-bot
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run the bot once
+        run: node bot/run.js
+
+      - name: Save the practice account
+        run: |
+          git config user.name "gold-signal-desk bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add bot/data
+          if git diff --cached --quiet; then echo "nothing changed"; exit 0; fi
+          git commit -q -m "Bot run $(date -u +'%Y-%m-%d %H:%M') UTC"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q && exit 0; sleep 5; done
+          exit 1
