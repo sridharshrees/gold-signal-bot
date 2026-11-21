@@ -1,8 +1,8 @@
 {
- "updated": 1795224186523,
+ "updated": 1795232199482,
  "error": null,
  "source": "Binance",
- "price": 3541.11,
+ "price": 3505.6,
  "strategy": "4-hour breakout",
  "riskPercent": 1,
  "account": {
