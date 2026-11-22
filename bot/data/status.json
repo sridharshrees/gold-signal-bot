@@ -1,8 +1,8 @@
 {
- "updated": 1795317622058,
+ "updated": 1795348021223,
  "error": null,
  "source": "Binance",
- "price": 3537.65,
+ "price": 3557.18,
  "strategy": "4-hour breakout",
  "riskPercent": 1,
  "account": {
@@ -23,6 +23,15 @@
   "net": 0,
   "lastTrades": []
  },
- "news": [],
+ "news": [
+  {
+   "title": "Core PCE Price Index m/m",
+   "t": 1795613400000
+  },
+  {
+   "title": "Prelim GDP q/q",
+   "t": 1795613400000
+  }
+ ],
  "log": []
 }
