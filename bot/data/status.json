@@ -1,8 +1,8 @@
 {
- "updated": 1795449400781,
+ "updated": 1795488188506,
  "error": null,
  "source": "Binance",
- "price": 3661.39,
+ "price": 3641.07,
  "strategy": "4-hour breakout",
  "riskPercent": 1,
  "account": {
@@ -12,10 +12,10 @@
  },
  "position": null,
  "levels": {
-  "buyAbove": 3784.94,
+  "buyAbove": 3752.54,
   "sellBelow": 3501,
-  "nextClose": 1795449600000,
-  "atr": 42.91210773678244
+  "nextClose": 1795492800000,
+  "atr": 43.349518791325124
  },
  "record": {
   "trades": 0,
