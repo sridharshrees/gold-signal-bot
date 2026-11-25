@@ -1,8 +1,8 @@
 {
- "updated": 1795583532605,
+ "updated": 1795620837616,
  "error": null,
  "source": "Binance",
- "price": 3540.01,
+ "price": 3445,
  "strategy": "4-hour breakout",
  "riskPercent": 1,
  "account": {
@@ -13,9 +13,9 @@
  "position": null,
  "levels": {
   "buyAbove": 3681.55,
-  "sellBelow": 3501,
-  "nextClose": 1795593600000,
-  "atr": 41.03470448982033
+  "sellBelow": 3480.32,
+  "nextClose": 1795622400000,
+  "atr": 42.00236927706344
  },
  "record": {
   "trades": 0,
@@ -23,15 +23,12 @@
   "net": 0,
   "lastTrades": []
  },
- "news": [
+ "news": [],
+ "log": [
   {
-   "title": "Core PCE Price Index m/m",
-   "t": 1795613400000
-  },
-  {
-   "title": "Prelim GDP q/q",
-   "t": 1795613400000
+   "t": 1795620837616,
+   "m": "SELL breakout skipped: the bot ran too long after the 4-hour close.",
+   "k": ""
   }
- ],
- "log": []
+ ]
 }

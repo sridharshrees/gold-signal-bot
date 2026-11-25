@@ -3,9 +3,15 @@
  "balance": 10000,
  "pos": null,
  "history": [],
- "lastSignalEnd": 0,
- "log": [],
- "lastRun": 1795583532605,
+ "lastSignalEnd": 1795608000000,
+ "log": [
+  {
+   "t": 1795620837616,
+   "m": "SELL breakout skipped: the bot ran too long after the 4-hour close.",
+   "k": ""
+  }
+ ],
+ "lastRun": 1795620837616,
  "lastError": null,
  "source": "Binance"
 }
